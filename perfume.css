@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+
+.container {
+    background-color: white;
+    display: flex;
+    height: 30rem;
+    width: 40rem;
+    
+    border-radius: 4% ;
+     box-shadow: 0px 4px 30px 5px rgb(126, 126, 126);
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-div {
+    padding: 2rem 2rem 2rem 2rem}
+
+/* img {
+    height: 40rem;
+    width: 20rem;
+    object-fit: cover;
+    border-bottom-left-radius: 4%;
+    border-top-left-radius: 4%;
+} */
+
+.perfume-video {
+    height: 40rem;
+    width: 20rem;
+    object-fit: cover;
+    border-bottom-left-radius: 4%;
+    border-top-left-radius: 4%;
+}
+
+
+p, h4 {
+    color: grey;
+}
+
+.btn {
+    background-color: black; 
+    color: white;              
+    border: none;              
+    height: 3rem;
+    width: 14rem;
+    border-radius: 10px;
+    cursor: pointer;           
+    font-size: 1.2rem;        
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: grey; 
+}
+
+
+.price-div {
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    padding-left: 2rem;
+    color: grey;
+}
+
+.new-price {
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1; /* You can lower this for a faded effect */
+    pointer-events: none; /* So it doesn't block clicks */
+    background: black; 
+}
